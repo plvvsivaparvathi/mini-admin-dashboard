@@ -25,6 +25,10 @@
               "src/assets"
             ],
             "styles": [
+               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  
+  "node_modules/primeicons/primeicons.css",
+  
               "src/styles.css"
             ],
             "scripts": []
@@ -94,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "01aab8d8-f0a6-4599-8bb2-223a2b5d469e"
   }
 }

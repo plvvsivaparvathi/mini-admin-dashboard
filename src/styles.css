@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+/* DEFAULT (LIGHT MODE) */
+:root {
+  --bg-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-color: #212529;
+  --border-color: #dee2e6;
+}
+
+/* DARK MODE */
+body[data-theme='dark'] {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #f1f1f1;
+  --border-color: #2c2c2c;
+}
+
+/* APPLY VARIABLES */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.card,
+.table {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.table th,
+.table td {
+  border-color: var(--border-color);
+}
+
+input,
+select {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+input::placeholder {
+  color: #999;
+}
+body[data-theme='dark'] .btn-outline-secondary {
+  color: #f1f1f1;
+  border-color: #666;
+}
